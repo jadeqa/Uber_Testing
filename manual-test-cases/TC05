@@ -1,0 +1,11 @@
+
+Step 1:  Login to Salesforce via Freshworks App Launcher as a BDM
+Step 2: Navigate to a Lead record that originated from Marketo
+Step 3: On the Lead detail page, locate the ZoomInfo Integration Widget or Section
+Step 4: Click on the ZoomInfo tab or section within the Lead record
+Step 5: Verify that the ZoomInfo interface/frame loads successfully
+Step 6: Verify that company details and associated employee information are displayed within the ZoomInfo frame
+Step 7: Click on any employee listed under the ZoomInfo section
+Step 8: Click the "Share" button on the employee profile
+Step 9: Select the option "Export Data to Contact"
+Step 10: Verify that a new Contact record is created in Salesforce, linked to the Lead or Account as per system behavior

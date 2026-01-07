@@ -1,0 +1,12 @@
+{
+  "mcp": {
+    "servers": {
+      "playwright": {
+        "command": "npx",
+        "args": ["@playwright/mcp@latest"]
+      }
+    }
+  },
+  "chat.mcp.access": "all",
+  "github.copilot.chat.agent.autoFix": true
+}

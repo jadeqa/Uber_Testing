@@ -1,0 +1,160 @@
+{
+  "config": {
+    "configFile": "D:\\Playwright\\uber\\playwright.config.ts",
+    "rootDir": "D:/Playwright/uber/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "./report",
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./report/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Playwright/uber/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "tests",
+        "name": "tests",
+        "testDir": "D:/Playwright/uber/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "TC00.spec.ts",
+      "file": "TC00.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Salesforce Lead Creation and Conversion - Non CPQ User",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "tests",
+              "projectName": "tests",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14896,
+                  "error": {
+                    "message": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@aria-label=\"Search\"]')\u001b[22m\n",
+                    "stack": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@aria-label=\"Search\"]')\u001b[22m\n\n    at D:\\Playwright\\uber\\tests\\TC00.spec.ts:17:56",
+                    "location": {
+                      "file": "D:\\Playwright\\uber\\tests\\TC00.spec.ts",
+                      "column": 56,
+                      "line": 17
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//button[@aria-label=\"Search\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'abd'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   \n \u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//span[@title=\"abd\"])[1]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\Playwright\\uber\\tests\\TC00.spec.ts",
+                        "column": 56,
+                        "line": 17
+                      },
+                      "message": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//button[@aria-label=\"Search\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//button[@aria-label=\"Search\"]'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'abd'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   \n \u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//span[@title=\"abd\"])[1]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\Playwright\\uber\\tests\\TC00.spec.ts:17:56\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-05T07:32:32.589Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright\\uber\\test-results\\TC00-Salesforce-Lead-Creation-and-Conversion---Non-CPQ-User-tests\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Playwright\\uber\\test-results\\TC00-Salesforce-Lead-Creation-and-Conversion---Non-CPQ-User-tests\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\Playwright\\uber\\test-results\\TC00-Salesforce-Lead-Creation-and-Conversion---Non-CPQ-User-tests\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\Playwright\\uber\\tests\\TC00.spec.ts",
+                    "column": 56,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "75071aa266058a7902b3-3484a2e95b1b168f8aae",
+          "file": "TC00.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-05T07:32:31.700Z",
+    "duration": 16636.615999999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
