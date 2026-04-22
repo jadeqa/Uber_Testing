@@ -1,0 +1,5 @@
+[
+  {
+    "filename": "tc003.py",
+    "explanation": "Complete Selenium Python test for Salesforce with login, test steps, and logout",
+    "code": "import unittest\nimport time\nfrom selenium import webdriver\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.common.keys import Keys\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nfrom selenium.common.exceptions import TimeoutException, NoSuchElementException, StaleElementReferenceException, ElementNotInteractableException\n\nclass TestTC003_VerifyTCVReadOnly(unittest.TestCase):\n    LOGIN_URL = \"https://login.salesforce.com\"\n    USERNAME = \"shambhavi.chandel948@agentforce.com\"\n    PASSWORD = \"Salesforce@22\"\n    ACCOUNT_NAME = \"Gamma Services - TCV Test\"\n    TCV_FIELD_API_NAME = \"TCV_Amount__c\"\n    EXPECTED_TCV_VALUE = \"$25,000.00\"\n    ATTEMPTED_EDIT_VALUE = \"30000.00\"\n\n    def setUp(self):\n        self.driver = webdriver.Chrome()\n        self.driver.maximize_window()\n        self.driver.implicitly_wait(5) # Set a
